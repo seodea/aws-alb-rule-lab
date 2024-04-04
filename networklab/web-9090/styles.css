@@ -1,0 +1,35 @@
+/* Add your styles here */
+header, nav, main, footer {
+    margin: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.animal {
+    margin-bottom: 20px;
+}
+
+.animal img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.animal h3 {
+    text-align: center;
+}
+
+.animal p {
+    text-align: justify;
+}
+
