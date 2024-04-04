@@ -21,9 +21,9 @@ echo "Finish update the code"
 
 echo "Copy the httpd config file for test"
 
-cp -f httpd.conf /etc/httpd/conf/httpd.conf 
-cp VirtualHost.conf /etc/httpd/conf.d
-mv networklab/ /var/www/html/
+cp -f web/httpd.conf /etc/httpd/conf/httpd.conf 
+cp web/VirtualHost.conf /etc/httpd/conf.d
+mv web/networklab/ /var/www/html/
 
 chown ec2-user:ec2-user -R /var/www/html/networklab/
 
