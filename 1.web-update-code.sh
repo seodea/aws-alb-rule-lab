@@ -14,7 +14,7 @@ fi
 word_to_replace="{domain}"
 
 #sed -i "s/$word_to_replace/$1/g" web/networklab/web-8080/index.php
-sed -i "s/$word_to_replace/$1/g" web/index.php
+#sed -i "s/$word_to_replace/$1/g" web/index.php
 sed -i "s/$word_to_replace/$1/g" web/networklab/web-8080/contact.php
 sed -i "s/$word_to_replace/$1/g" web/networklab/web-8080/display_guestbook.php
 
