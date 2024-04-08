@@ -13,8 +13,7 @@ fi
 
 word_to_replace="{domain}"
 
-#sed -i "s/$word_to_replace/$1/g" web/networklab/web-8080/index.php
-#sed -i "s/$word_to_replace/$1/g" web/index.php
+sed -i "s/$word_to_replace/$1/g" web/networklab/web-8080/index.php
 sed -i "s/$word_to_replace/$1/g" web/networklab/web-8080/contact.php
 sed -i "s/$word_to_replace/$1/g" web/networklab/web-8080/display_guestbook.php
 
@@ -26,9 +25,7 @@ cp -f web/httpd.conf /etc/httpd/conf/httpd.conf
 cp web/VirtualHost.conf /etc/httpd/conf.d
 mv web/networklab/ /var/www/html/
 
-#chown ec2-user:ec2-user -R /var/www/html/networklab/
-
-systemctl start httpd
+chown ec2-user:ec2-user -R /var/www/html/networklab/
 
 echo "################"
 echo "## GOOD LUCK ###"
