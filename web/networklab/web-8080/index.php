@@ -39,7 +39,7 @@
                 <h2>Animals</h2>
                 <?php
                 // Make HTTP request to fetch animal data from the API endpoint
-                $animalData = file_get_contents('http://animal.{domain}/animal_api.php');
+                $animalData = file_get_contents('http://safari.{domain}/animal_api.php');
 
                 // Decode JSON response
                 $animals = json_decode($animalData, true);
