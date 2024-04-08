@@ -28,6 +28,7 @@ mv web/networklab/ /var/www/html/
 
 #chown ec2-user:ec2-user -R /var/www/html/networklab/
 
+systemctl start httpd
 
 echo "################"
 echo "## GOOD LUCK ###"
