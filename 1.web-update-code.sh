@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pattern="^[a-zA-Z]+(\.[a-zA-Z]+)+$"
+pattern="^[a-zA-Z0-9]+(\.[a-zA-Z]+)+$"
 
 if [[ $1 =~ $pattern ]]; then
     echo "Domain address is valid."
